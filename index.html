@@ -63,12 +63,20 @@
     </style>
     <script>      
         new Datium({
-            element: document.querySelector('#test-element'),
-            theme: 'material',
-            modal: true
+          element: document.querySelector('#test-element'),
+          startView: 'hour',
+          endView: 'second',
+          hourSelectionInterval: 2,
+          minuteSelectionInterval: 15,
+          secondSelectionInterval: 15,
+          modal: true
         });
         new Datium({
-            element: document.querySelector('#test-element1')
+          element: document.querySelector('#test-element1'),
+          startView: 'hour',
+          endView: 'hour',
+          maxView: 'hour',
+          theme: 'material'
         });
     </script>
 </body>
