@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <h2>Options almost there</h2>
+    <h2>Transition False</h2>
     <input id="test-element1"/>
     <p>
         Nullam pretium rhoncus arcu vitae iaculis. Donec maximus placerat leo at rhoncus. Praesent ut elit pellentesque, ullamcorper
@@ -66,9 +66,6 @@
           element: document.querySelector('#test-element'),
           startView: 'hour',
           endView: 'second',
-          hourSelectionInterval: 2,
-          minuteSelectionInterval: 15,
-          secondSelectionInterval: 15,
           modal: true
         });
         new Datium({
@@ -76,7 +73,8 @@
           startView: 'hour',
           endView: 'hour',
           maxView: 'hour',
-          theme: 'material'
+          theme: 'material',
+          transition: false
         });
     </script>
 </body>
