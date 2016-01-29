@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <h2>Selection on Mobile?</h2>
+    <h4>LATEST AND GREATEST</h4>
     <input id="test-element1"/>
     <p>
         Nullam pretium rhoncus arcu vitae iaculis. Donec maximus placerat leo at rhoncus. Praesent ut elit pellentesque, ullamcorper
@@ -47,14 +47,45 @@
         blandit justo nulla, vitae hendrerit enim scelerisque at. Sed ipsum sem, sodales luctus pharetra ut, hendrerit nec
         dui.
     </p>
+    <input/>
+    <p>
+        Nullam pretium rhoncus arcu vitae iaculis. Donec maximus placerat leo at rhoncus. Praesent ut elit pellentesque, ullamcorper
+        eros laoreet, ullamcorper est. In metus leo, aliquet non tortor aliquam, fermentum cursus ligula. Vivamus eget pulvinar
+        turpis. Vestibulum hendrerit venenatis tincidunt. Pellentesque feugiat ante ac nisl congue vehicula eget nec leo.
+        In gravida nibh non malesuada laoreet. Nam mollis malesuada nunc, nec tempus urna ullamcorper sed.
+    </p>
+    <p>
+        In rhoncus tempor eros, vel pellentesque dolor laoreet et. Aenean a lectus porta, congue nisi non, cursus magna. Nulla tempus
+        rhoncus odio in dapibus. Vivamus sit amet leo aliquet, luctus erat sit amet, mollis mi. Aliquam in pellentesque urna.
+        Pellentesque in tristique turpis. Mauris in tempor sem. Suspendisse id tincidunt tortor. In scelerisque congue ante
+        et ultrices. Suspendisse sed ornare erat. Maecenas sollicitudin commodo erat, ac fringilla est vestibulum et. Proin
+        sem orci, hendrerit nec nulla sed, hendrerit imperdiet eros. Morbi placerat leo eget libero sagittis fringilla. Integer
+        blandit justo nulla, vitae hendrerit enim scelerisque at. Sed ipsum sem, sodales luctus pharetra ut, hendrerit nec
+        dui.
+    </p>
+    <p>
+        Nullam pretium rhoncus arcu vitae iaculis. Donec maximus placerat leo at rhoncus. Praesent ut elit pellentesque, ullamcorper
+        eros laoreet, ullamcorper est. In metus leo, aliquet non tortor aliquam, fermentum cursus ligula. Vivamus eget pulvinar
+        turpis. Vestibulum hendrerit venenatis tincidunt. Pellentesque feugiat ante ac nisl congue vehicula eget nec leo.
+        In gravida nibh non malesuada laoreet. Nam mollis malesuada nunc, nec tempus urna ullamcorper sed.
+    </p>
+    <p>
+        In rhoncus tempor eros, vel pellentesque dolor laoreet et. Aenean a lectus porta, congue nisi non, cursus magna. Nulla tempus
+        rhoncus odio in dapibus. Vivamus sit amet leo aliquet, luctus erat sit amet, mollis mi. Aliquam in pellentesque urna.
+        Pellentesque in tristique turpis. Mauris in tempor sem. Suspendisse id tincidunt tortor. In scelerisque congue ante
+        et ultrices. Suspendisse sed ornare erat. Maecenas sollicitudin commodo erat, ac fringilla est vestibulum et. Proin
+        sem orci, hendrerit nec nulla sed, hendrerit imperdiet eros. Morbi placerat leo eget libero sagittis fringilla. Integer
+        blandit justo nulla, vitae hendrerit enim scelerisque at. Sed ipsum sem, sodales luctus pharetra ut, hendrerit nec
+        dui.
+    </p>
     <style>
         input {
             padding: 10px;
             width: 300px;
             border: 1px solid #aaa;
             border-radius: 2px;
-            transition: all ease .2s;
             font-size: 16pt;
+            transition: all ease .2s;
         }
         
         input:focus {
@@ -64,15 +95,19 @@
     <script>      
         new Datium({
           element: document.querySelector('#test-element'),
-          startView: 'hour',
           endView: 'second',
-          modal: true
+          minDate: new Date('2016').valueOf() - 999999,
+          minuteSelectionInterval: 5,
+          displayFormat: 'hh:mm:ssA MMM Do, YYYY',
+          militaryTime: false
         });
         new Datium({
           element: document.querySelector('#test-element1'),
           theme: 'material',
-          transition: false,
-          small: true
+          startView: 'hour',
+          endView: 'second',
+          small: true,
+          transition: false
         });
     </script>
 </body>
