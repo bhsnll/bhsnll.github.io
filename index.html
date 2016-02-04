@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <h4>Latest & Greatest</h4>
+    <h4>Latest & Greatest 2</h4>
     <input id="test-element1"/>
     <p>
         Nullam pretium rhoncus arcu vitae iaculis. Donec maximus placerat leo at rhoncus. Praesent ut elit pellentesque, ullamcorper
@@ -98,16 +98,17 @@
           endView: 'second',
           minDate: new Date('2016').valueOf() - 999999,
           minuteSelectionInterval: 5,
-          displayFormat: 'hh:mm:ssA MMM Do, YYYY',
-          militaryTime: false
+          displayFormat: 'hh:mmA ddd MMM Do, YYYY'
         });
+        
         new Datium({
           element: document.querySelector('#test-element1'),
           theme: 'material',
           startView: 'hour',
           endView: 'second',
           small: true,
-          transition: false
+          transition: false,
+          displayFormat: 'hh:mmA ddd MMM Do, YYYY'
         });
     </script>
 </body>
