@@ -4,13 +4,7 @@ app.controller("myController", function($scope) {
     $scope.date = new Date();
     $scope.options = {
         displayAs: "MM/DD/YY",
-        theme: {
-            primary: '#990000',
-            primary_text: '#ffffff',
-            secondary: '#ffffff',
-            secondary_text: '#444444',
-            secondary_accent: '#990000'
-        }
+        theme: 'dark'
     }
 });
 
