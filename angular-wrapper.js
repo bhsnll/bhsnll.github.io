@@ -26,7 +26,6 @@ app.directive("datiumPicker", function($timeout) {
             
             if (ngModel === null) return;
             
-            
             var date = new Date(scope.ngModel);
             $timeout(function() {
                 if (date.toString() === 'Invalid Date') {
