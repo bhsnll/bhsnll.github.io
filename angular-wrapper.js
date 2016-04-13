@@ -52,17 +52,6 @@ app.directive("datiumPicker", function($timeout) {
             ngModel.$parsers.unshift(function(value) {
                 return picker.getDate();
             });
-            
-            
-            element[0].addEventListener('touchstart', function(){
-                alert('touchstart');
-            });
-            element[0].addEventListener('mousedown', function(){
-                alert('mousedown');
-            });
-            var touchEvent = document.createEvent('MouseEvents');
-            touchEvent.initEvent('mousedown', true, true);
-            element[0].dispatchEvent(touchEvent);
         }
     }
 });
