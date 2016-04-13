@@ -60,8 +60,8 @@ app.directive("datiumPicker", function($timeout) {
             element[0].addEventListener('mousedown', function(){
                 alert('mousedown');
             });
-            var touchEvent = document.createEvent('TouchEvent');
-            touchEvent.initEvent('touchstart', true, true);
+            var touchEvent = document.createEvent('MouseEvents');
+            touchEvent.initEvent('mousedown', true, true);
             element[0].dispatchEvent(touchEvent);
         }
     }
