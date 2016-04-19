@@ -3,7 +3,7 @@ var app = angular.module("myApp", []);
 app.controller("myController", function($scope) {
     $scope.date = new Date();
     $scope.options = {
-        displayAs: "h:mma [this is a cow] MM/DD/YYYY",
+        displayAs: "h:mma MM/DD/YYYY",
         theme: 'dark'
     }
     
