@@ -4,7 +4,8 @@ app.controller("myController", function($scope) {
     $scope.date = new Date();
     $scope.options = {
         displayAs: "h:mma MM/DD/YYYY",
-        theme: 'dark'
+        theme: 'light',
+        showPicker: false
     }
     
     
